@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context="ru.ryuzmukhametov.modernuiapp.MainActivity"
+    >
+
+    <SeekBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:id="@+id/seekBar"
+        android:max="100"
+        tools:context="ru.ryuzmukhametov.modernuiapp.MainActivity"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@color/colorBlack"
+        tools:context="ru.ryuzmukhametov.modernuiapp.MainActivity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/seekBar"
+        >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            tools:context="ru.ryuzmukhametov.modernuiapp.MainActivity"
+            >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@color/colorLightBlue"
+                tools:context="ru.ryuzmukhametov.modernuiapp.MainActivity"
+                android:layout_margin="5dp"
+                android:id="@+id/leftTopRectangle"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@color/colorLightRed"
+                tools:context="ru.ryuzmukhametov.modernuiapp.MainActivity"
+                android:layout_margin="5dp"
+                android:id="@+id/leftBottomRectangle"
+                >
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            tools:context="ru.ryuzmukhametov.modernuiapp.MainActivity"
+            >
+
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@color/colorRed"
+                tools:context="ru.ryuzmukhametov.modernuiapp.MainActivity"
+                android:layout_margin="5dp"
+                android:id="@+id/rightTopRectangle"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                tools:context="ru.ryuzmukhametov.modernuiapp.MainActivity"
+                android:layout_margin="5dp"
+                android:id="@+id/rightMidRectangle"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@color/colorBlue"
+                tools:context="ru.ryuzmukhametov.modernuiapp.MainActivity"
+                android:layout_margin="5dp"
+                android:id="@+id/rightBottomRectangle"
+                >
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
