@@ -1,6 +1,7 @@
 package ru.ryuzmukhametov.modernuiapp;
 
 import android.graphics.Color;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
@@ -45,12 +46,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void changeBackgroundColorAccordingToProgress(int progress) {
-        String color = "#FF40";
-        String hex = Integer.toHexString(progress);
-        if (hex.length() == 1) {
-            hex = "0" + hex;
+        int colors[] = new int[] {R.color.colorLightBlue, R.color.colorLightRed, R.color.colorRed, R.color.colorBlue};
+        LinearLayout layouts[] = new LinearLayout[] {mLeftTopRectangle, mLeftBottomRectangle, mRightTopRectangle, mRightBottomRectangle};
+
+        int index = 0;
+        for (LinearLayout layout : layouts) {
+            int color = ContextCompat.getColor(this, colors[index++]);
+
+            int r = Color.red(color);
+            int g = Color.green(color);
+            int b = Color.blue(color);
+            int a = Color.alpha(color);
+            //progress = 0;
+            //r = (r + progress) % 255;
+            g = (g + progress) % 255;
+            //b = (b + progress) % 255;
+
+
+            color = Color.argb(a, r, g, b);
+
+            layout.setBackgroundColor(color);
+
         }
 
-        mLeftTopRectangle.setBackgroundColor(Color.parseColor(color + hex));
+
     }
 }
